@@ -3,9 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flashcard App</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome (icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+
+    <div class="container">
+        <div class="add-card-con">
+            <button id="add-card">Add New Card</button>
+        </div>
+
+        <div class="cards-list">
+            <div class="card">
+                <p class="que-div">Question</p>
+                <p class="ans-div">Answer</p>
+                <button class="show-hide-btn">Show/Hide</button>
+                <div class="btns-con">
+                    <button class="edit">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                    <button class="delete">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <p class="que-div">Question</p>
+                <p class="ans-div">Answer</p>
+                <button class="show-hide-btn">Show/Hide</button>
+                <div class="btns-con">
+                    <button class="edit">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                    <button class="delete">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <p class="que-div">Question</p>
+                <p class="ans-div">Answer</p>
+                <button class="show-hide-btn">Show/Hide</button>
+                <div class="btns-con">
+                    <button class="edit">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                    <button class="delete">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <p class="que-div">Question</p>
+                <p class="ans-div">Answer</p>
+                <button class="show-hide-btn">Show/Hide</button>
+                <div class="btns-con">
+                    <button class="edit">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                    <button class="delete">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal hide" id="add-card-modal">
+            <h2>Add Flashcard</h2>
+            <div class="wrapper">
+                <div class="error-con">
+                    <span class="hide" id="error">
+                        Input fields cannot be empty!
+                    </span>
+                </div>
+                <i class="fa-solid fa-xmark" id="close-btn"></i>
+            </div>
+            
+            <label for="question">Question:</label>
+            <textarea class="input" rows="3" id="question" placeholder="Type the question here..."></textarea>
+            <label for="answer">Questions:</label>
+            <textarea class="input" rows="4" id="answer" placeholder="Type the answer here..."></textarea>
+            <button id="save-btn">Save</button>
+        </div>
+    </div>    
+
+    <!-- custom js -->
+    <script src="script.js"></script>
 </body>
 </html>
